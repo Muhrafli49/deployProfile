@@ -1,0 +1,157 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tugas Deploy Aplikasi Profile</title>
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Hi 👋, I'm Rafli</h1>
+        <p>Cohort BANGKIT 2023 Learning Path Cloud Computing Group CC-65</p>
+      </div>
+      <!-- <nav class="nav-list"> -->
+      <nav>
+        <ul>
+          <li><a onclick="scrollElement('home')">Resume</a></li>
+          <li><a onclick="scrollElement('biodata')">Biodata</a></li>
+          <li><a onclick="scrollElement('kontak')">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- End of Navigation Bar -->
+
+    <main>
+      <div class="content">
+        <article class="card" id="home">
+          <div class="content-description">
+            <h1 class="title">Resume</h1>
+            <p>
+              Salam kenal, saya mahasiswa semester 6 di Institut Teknologi
+              Telkom Purwokerto, yang saat ini sedang menempuh pendidikan di
+              jurusan Teknik Informatika. Saya sangat antusias dan bersemangat
+              dalam mempelajari ilmu-ilmu teknologi informasi, dan berharap
+              dapat menjadi seorang profesional yang kompeten di bidang ini.
+              Selama kuliah, saya telah belajar banyak tentang pemrograman,
+              jaringan komputer, sistem informasi, dan teknologi terkini
+              lainnya. Saya percaya bahwa pendidikan di ITTP sangat baik dalam
+              mempersiapkan mahasiswa untuk memasuki dunia kerja yang
+              kompetitif. Saya berharap dapat memanfaatkan kesempatan ini untuk
+              belajar lebih banyak lagi dan meningkatkan keterampilan saya,
+              sehingga saya dapat menjadi kontributor yang berharga bagi
+              industri teknologi informasi di masa depan.
+            </p>
+          </div>
+        </article>
+      </div>
+      <aside>
+        <article class="card">
+          <header>
+            <h2>Profile</h2>
+            <figure>
+              <img src="img/foto 2.png" width="180" height="180" alt="" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>Domisili</th>
+                <td>Banjarnegara</td>
+              </tr>
+              <tr>
+                <th>No Telepon</th>
+                <td>+62 812-1249-6711</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+
+      <div class="container">
+        <main id="biodata">
+          <article>
+            <h1>Biodata</h1>
+            <p>Biodata dan Riwayat Pendidikan Saya</p>
+            <div class="row">
+              <div class="label">Nama Lengkap</div>
+              <div class="value">: Muhamad Rafli</div>
+            </div>
+            <div class="row">
+              <div class="label">TTL</div>
+              <div class="value">: Jakarta 22 April 2002</div>
+            </div>
+            <div class="row">
+              <div class="label">Alamat</div>
+              <div class="value">
+                : Jl. Bunga Bangsa I Tambun Selatan Kab.Bekasi
+              </div>
+            </div>
+
+            <h1>Riwayat Pendidikan</h1>
+            <ul>
+              <li>
+                <b>Institut Teknologi Telkom Purwokerto</b> (2020 - Sekarang)
+              </li>
+              <li><b>SMA Pusaka Nusantara 2 Bekasi</b> (2017 - 2020)</li>
+            </ul>
+          </article>
+        </main>
+      </div>
+
+      <div class="hero">
+        <main id="kontak">
+          <article>
+            <h1>Kontak</h1>
+            <div class="icon-container">
+              <a class="tombol" href="https://github.com/Muhrafli49"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                class="tombol"
+                href="https://www.linkedin.com/in/muhamad-rafli0402/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="tombol"
+                href="https://www.facebook.com/muhammad.rafli.948/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="tombol"
+                href="https://www.instagram.com/mrafli_49/?hl=id"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </article>
+        </main>
+      </div>
+    </main>
+    <footer>&copy; 2023, Muhamad Rafli||CC-65</footer>
+    <script>
+      const scrollElement = (value = string) => {
+        console.log(value);
+        const elem = document.getElementById(value);
+        elem.scrollIntoView({ behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>

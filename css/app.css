@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: inline;
+}
+
+.logo {
+    font-family: 'Quicksand', sans-serif;
+    padding: 30px;
+    background-color: #F6C391;
+    text-align: center;
+    color: black;
+}
+
+.logo h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.logo p {
+    text-align: center;
+    padding: 5px 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+nav {
+    background-color: #F79540;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    justify-content: space-around;
+    padding-block: 1rem;
+    z-index: 999;
+    list-style-type: none;
+}
+
+nav a {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    transition: all .1s ease-in-out;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover {
+    background-color: #FE6244;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+/* Home */
+.card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0.5, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 40px;
+    background-color: #FFFAF4;
+}
+
+.content {
+    float: left;
+    width: 75%;
+}
+
+main .content .content-description .title {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+main .content .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 1em;
+}
+
+
+main .content .content-description button:hover {
+    border: 3px solid #2B3467;
+    color: #2B3467;
+    background-color: transparent;
+}
+
+main .content .content-image {
+    width: 100%;
+    max-height: 500px;
+    object-position: center;
+}
+
+.content .content-image img {
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* HOME END */
+
+
+/* ARTIKEL */
+
+#biodata {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0.5, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 40px;
+    background-color: #FFFAF4;
+}
+
+.container {
+    float: left;
+    width: 75%;
+}
+
+.container p {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 1020px;
+    padding: 1em;
+}
+
+.container ul {
+    line-height: 2.5rem;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    line-height: .5rem;
+    padding: 1em;
+}
+
+.label {
+    width: 120px;
+    font-weight: bold;
+}
+
+.value {
+    flex: 1;
+}
+
+
+/* ARTIKEL END */
+
+
+/* KONTAK */
+#kontak {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0.5, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 40px;
+    background-color: #FFFAF4;
+    ;
+}
+
+.hero {
+    float: left;
+    width: 75%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-block: 1rem;
+    text-align: center;
+    width: 1020px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tombol {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #000;
+    overflow: hidden;
+    position: relative;
+    color: #FE6244;
+    text-decoration: none;
+}
+
+.tombol i {
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+
+.tombol:hover i {
+    transform: scale(1.3);
+    color: #fff;
+}
+
+.tombol::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    background: #F79540;
+}
+
+.tombol:hover::before {
+    left: -10%;
+    top: -10%;
+    animation: aaa 0.7s 1;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        left: -10%;
+        top: -10%;
+    }
+}
+
+
+/* KONTAK END */
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+    }
+
+    header.navbar .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+}
+
+@media (max-width:768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .kontak {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .kontainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .kontainer .kontainer-deskripsi .text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+    background-color: #F6C391;
+    font-weight: 500;
+}
+
+aside {
+    float: right;
+    padding-left: 5px;
+    width: 25%;
+    display: flex;
+}
+
+.card img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+}
