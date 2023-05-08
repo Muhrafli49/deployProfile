@@ -38,6 +38,9 @@ header {
     font-weight: 600;
 }
 
+li {
+    cursor: pointer;
+}
 
 nav {
     background-color: #F79540;
